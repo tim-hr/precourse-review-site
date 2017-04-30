@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Precourse Review</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/prism.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <h2>Functions can create functions.</h2>
+
+    <p>In X-Cell we made a DOM construction helper function that looked like this:</p>
+    <pre data-src="/snippets/create-el.js"><code class="language-javascript"></code></pre>
+    <p>You can see that the return value from this function is... another function!</p>
+    <p>The purpose of <code class="language-javascript">createEl</code> is to make a function that you can call later to create an element for you, of the specified tag name (e.g., a TD).</p>
+
+    <p>Let's create another such "factory" function. This one will create a greeting function. See the examples below.</p>
+
+    <pre data-src="/snippets/greeting-factory-function.js"><code class="language-javascript"></code></pre>
+    <script src="/snippets/greeting-factory-function.js"></script>
+
+    <hr>
+    <a href="/">Back</a>
+
+  </div>
+
+  <script src="/js/prism.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Precourse Review</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/prism.css">
+  <script src="js/connect-four-helper.js"></script>
+  <style>
+    td { text-align: center; }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <h2>Keys can be dynamically constructed.</h2>
+
+    <p>Imagine you are making a Connect Four game in JavaScript.</p>
+
+    <img src="http://i.imgur.com/7SoMNoDl.png" />
+
+    <p>
+      You want to represent the board as a grid of cells that can be referenced by their X-Y coordinates, from (0, 0)
+      in the upper left to (6, 5) in the lower right.
+    </p>
+    <p> We will use a JavaScript object literal to model the board. The first few moves have been pre-populated.</p>
+    <p>Implement <code class="language-javascript">placePiece()</code> below.</p>
+    <p>If you implement it properly,the result should be a winning board for player "O".</p>
+    <p>
+      <em>
+        Note: To win Connect Four, you must place 4 pieces of the same color next to each other in any direction:
+        horizontally, vertically, or diagonally.
+      </em>
+    </p>
+
+    <table class="data-table" id="connect-four">
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+    <pre class="answer" data-src="snippets/connect-four.js"><code class="language-javascript"></code></pre>
+    <script src="snippets/connect-four.js"></script>
+
+    <hr>
+    <a href="/">Back</a>
+  </div>
+  <script src="/js/prism.js"></script>
+</body>
+
+</html>

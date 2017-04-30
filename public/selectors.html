@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Precourse Review</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/prism.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <h2>Selectinator 5000</h2>
+
+    <p>Demonstrate your ability to use the DOM Selector API to target one or more elements on the page, then manipulate them.</p>
+
+    <h3>Manipulating tables</h3>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>A</th>
+          <th>B</th>
+          <th>C</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>my</td>
+          <td>oh</td>
+          <td>my</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>wow</td>
+          <td>just</td>
+          <td>wow</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>great</td>
+          <td>just</td>
+          <td>great</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>yeah</td>
+          <td>no</td>
+          <td>yeah</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button id="btn-nuke-first-row">Nuke the first data row!</button>
+
+    <p>Make the button above actually work! Every time it's pressed, it should remove the top data row from the table.</p>
+    <pre class="answer" data-src="snippets/table-remove-row.js"><code class="language-javascript"></code></pre>
+    <script src="snippets/table-remove-row.js"></script>
+
+    <h3>Manipulating images</h3>
+
+    <div class="my-little-pony">
+      <div>Fluttershy</div>
+      <img src="http://i.imgur.com/6PwBk7gm.png" />
+    </div>
+    <div class="my-little-pony">
+      <div>Apple Jack</div>
+      <img src="http://i.imgur.com/obV6ULBm.png" />
+    </div>
+
+    <button id="btn-cycle-ponies">Swap positions</button>
+
+    <p>Make the button above work! After pressing it once, Fluttershy should be on the bottom and Apple Jack on the top. Pressing it one more time should result in the original arrangement.</p>
+    <p>Do this without destroying any elements, just re-use the ones that are there.</p>
+    <pre class="answer" data-src="snippets/cycle-ponies.js"><code class="language-javascript"></code></pre>
+
+    <hr>
+    <a href="/">Back</a>
+  </div>
+  <script src="/js/prism.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Precourse Review</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/prism.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <h2>Classes: state and behavior</h2>
+
+    <p>In object-oriented programming, a <strong>class</strong> is a template for creating objects, providing initial values for each object's state (via the constructor) and implementations of the object's behavior (via methods).<p>
+
+    <p>Remember the definition of the spreadsheet's data model in X-Cell? Here's a simplified version to illustrate.</p>
+
+    <pre data-src="snippets/x-cell-model.js"><code class="language-javascript"></code></pre>
+
+    <ul>
+      <li>The <strong>constructor</strong> initializes the object's state.</li>
+      <li>The sheet's <strong>state</strong> is in <code class="language-javascript">this.data</code>.</li>
+      <li>State can be read and mutated (changed) at specific locations in the sheet by the two methods.</li>
+      <li>Being able to read and mutate the state of a single cell at a time is the only <strong>behavior</strong> that the model object has.</li>
+      <li>The <code class="language-javascript">new</code> keyword calls the constructor function and returns a newly-created <strong>instance</strong> of the model object.</li>
+      <li>The new instance has the same properties as the original model object.</li>
+      <li>That happens through prototypal inheritance (remember reading about how property lookup happens via <a href="https://precourse-hr.herokuapp.com/backgrounders/cs_and_javascript_fundamentals/08_prototype_chains" target="_new">the prototype chain</a>)?)
+    </ul>
+
+    <h3>You design a class</h3>
+
+    <img src="http://i.imgur.com/luKwuwQ.png" />
+    <p>Let's make a class that represents orders at In n Out.</p>
+    <p>For our purposes, let's say we're primarily interested in tracking which state an order is in.</p>
+
+    <table class="data-table">
+      <tr><th>State</th></tr>
+      <tr><td>Taking order</td></tr>
+      <tr><td>Cooking order</td></tr>
+      <tr><td>Requesting pickup of order</td></tr>
+      <tr><td>Order complete</td></tr>
+    </table>
+
+    <ul>
+      <li>An <code class="language-javascript">Order</code> must advance through these states in the specific sequence above.</li>
+      <li>An <code class="language-javascript">Order</code>'s only behavior is
+        <ol>
+          <li>advancing state until order is complete and </li>
+          <li>returning the current state (not logging/printing it, just returning it).</li>
+        </ol>
+      </li>
+      <li>Your code for manipulating <code class="language-javascript">Order</code> instances should <strong>only</strong> use <code class="language-javascript">Order</code> methods.</li>
+    </ul>
+
+    <p>Convert the following into working code.</p>
+    <pre class="answer" data-src="snippets/in-n-out-order-tracker.js"><code class="language-javascript"></code></pre>
+
+
+    <hr>
+    <a href="/">Back</a>
+  </div>
+  <script src="/js/prism.js"></script>
+</body>
+
+</html>
+

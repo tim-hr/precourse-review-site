@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Precourse Review</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/prism.css">
+  <link rel="stylesheet" href="/css/clock.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <h2>Object methods</h2>
+
+    <p>A function assigned to an object property is known as a "method".</p>
+
+    <p>
+      Make this digital clock work by adding the <code class="language-javascript">getSeconds()</code>,
+      <code class="language-javascript">getMinutes()</code> and
+      <code class="language-javascript">getHours()</code> methods.
+    </p>
+
+    <div class="clock">
+      <div>
+        <span class="hours">--</span> : <span class="minutes">--</span> : <span class="seconds">--</span>
+      </div>
+    </div>
+    <pre class="answer" data-src="snippets/clock.js"><code class="language-javascript"></code></pre>
+    <script src="snippets/clock.js"></script>
+
+    <p>
+      Hint: in each method, you can instantiate a new <code class="language-javascript">Date</code> object
+      and call a built-in method of the same name, e.g., <code class="language-javascript">date.getHours()</code>, etc.
+
+    <hr>
+    <a href="/">Back</a>
+  </div>
+  <script src="/js/prism.js"></script>
+  <script src="/js/clock-helper.js"></script>
+</body>
+
+</html>
+

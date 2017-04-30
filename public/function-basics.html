@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Precourse Review</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/prism.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <h1>Functions</h1>
+    <p>Functions are a fundamental unit of clean software construction.</p>
+
+    <h2>Good function names are self-describing</h2>
+
+    <p>Suppose you wrote a function to compute the sum of a column of cells in a spreadsheet.</p>
+    <o><code class="language-javascript">addCells</code> is an ambiguous name for such a function.</p>
+    <p>What’s a better <strong>self-describing</strong> name?</p>
+    <table>
+    <tr><th>Vague name</th><th>Clear name</th></tr>
+    <tr><td>addCells()</td><td class="answer">TODO</td></tr>
+    </table>
+
+    <h2>Good functions do just one thing</h2>
+
+    <p>Here’s some pseudocode for a function we propose to write.</p>
+    <pre data-src="/snippets/render-column-sums-pseudocode.js"><code class="language-javascript"></code></pre>
+    <p>This function is a bit bloated. It's doing too many things.</p>
+    <o>TODO: <strong>Decompose</strong> this function into a set of smaller, single purpose functions.</p>
+    <o>Do not write actual code, maintain the pseudocode style above.</p>
+    <!-- Go to the /js/snippets directory and edit the file being loaded via the custom "data-src" attribute. -->
+    <pre class="answer" data-src="/snippets/decompose-function.js"><code class="language-javascript"></code></pre>
+
+    <h2>Parameters and arguments</h2>
+
+    <p>Function <strong>parameters</strong> are variables – placeholders for values that will arrive later, when the function is called.</p>
+    <p>Function <strong>arguments</strong> are those actual values, passed in at runtime.</p>
+    <p>You can accidentally pass in a different number of arguments than the number of parameters.</p>
+    <p>The buggy code below has this problem. Fix it to make the table header row go green.</p>
+    <p>Note that the script is actually being loaded onto the page (look for a script tag around line 52 of the HTML file for this page). You can debug it using the Chrome Dev Tools.</p>
+
+    <table><!-- Do not edit this table. Change the JS. -->
+        <thead>
+            <tr><th>Name</th><th>T-shirt size</th></tr>
+            <tr><td>Gandalf</td><td>XL</td></tr>
+            <tr><td>Dobby</td><td>XS</td></tr>
+        </thead>
+    </table>
+    <pre class="answer" data-src="/snippets/parameters-and-arguments.js"><code class="language-javascript"></code></pre>
+    <script src="/snippets/parameters-and-arguments.js"></script>
+
+    <hr>
+    <a href="/">Back</a>
+
+  </div>
+
+  <script src="/js/prism.js"></script>
+</body>
+
+</html>

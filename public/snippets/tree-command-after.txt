@@ -1,0 +1,15 @@
+$ tree
+.
+├── client
+│   └── js
+│       ├── app.js
+│       └── test
+│           └── multiplier.test.js
+├── index.js
+├── package.json
+└── public
+    ├── css
+    │   └── styles.css
+    ├── index.html
+    └── js
+        └── bundle.js

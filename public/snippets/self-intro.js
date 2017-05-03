@@ -1,4 +1,4 @@
-const name = 'Jesse'
+const name = 'Jey'
 const introText = `Hi! I'm ${name}. Welcome to my review site!`;
 
 const introDiv = document.querySelector('#self-intro');

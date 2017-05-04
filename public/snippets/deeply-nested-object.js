@@ -14,5 +14,8 @@ const nestedObj = {
   }
 };
 
-const nestedObjValue = 'replace me with the innermost value above';
+const value = nestedObj.foo.bar.baz.quux.quuux.quuuux['quuuuux!'];
+
+const nestedObjValue = value;
+
 document.write(`<h4>${nestedObjValue}</h4>`);

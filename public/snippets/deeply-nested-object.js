@@ -14,5 +14,5 @@ const nestedObj = {
   }
 };
 
-const nestedObjValue = nestedObj.foo.bar.baz.quux.quuux.quuuux;
+const nestedObjValue = nestedObj.foo.bar['baz'].quux.quuux['quuuux'];
 document.write(`<h4>${nestedObjValue}</h4>`);

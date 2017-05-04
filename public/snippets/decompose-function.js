@@ -1,11 +1,17 @@
 const renderColumnSums = function() {
-  // your pseudocode here
+  // for each col index up to the num of cols
+  // send col to filterColumn
+  // send returned array to findArraySum
+  // find the footer element for this column
+  // set its text content to the sum
 };
 
-const TODO = function() {
-  // your pseudocode here
+const filterColumn = function() {
+  // retrieved data from cells
+  // filter out NaN data
+  // return array
 };
 
-const TODO = function() {
-  // your pseudocode here
+const findArraySum = function() {
+  // return reduced array
 };

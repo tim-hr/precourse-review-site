@@ -1,7 +1,7 @@
 const renderColumnSums = function() {
   // for each col index up to the num of cols
-    // getColumnCells();
-    // addColumnCells(columnCells);
+    // columnCells = getColumnCells();
+    // sum = addColumnCells(columnCells);
     // set its text content to the sum
 };
 

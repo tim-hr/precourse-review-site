@@ -1,11 +1,16 @@
 const renderColumnSums = function() {
-  // your pseudocode here
+  // declare variable and set value of sumColumns
+  // return setFootValue with previously declared variable as input
 };
 
-const TODO = function() {
-  // your pseudocode here
+const sumColumns = function() {
+  // for each col index up to the num of cols
+    // fetch all cells values from the model
+    // filter out all non numeric values
+    // return sum of all remaining values
 };
 
-const TODO = function() {
-  // your pseudocode here
+const setFooterValue = function() {
+  // identify footer element
+  // set value of footer element to passed in value
 };

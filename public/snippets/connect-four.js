@@ -20,6 +20,4 @@ placePiece('O', 3, 5);
 placePiece('X', 0, 3);
 placePiece('O', 4, 5);
 
-console.log(JSON.stringify(board));
-
 renderBoard(); // note: this function has been provided for you

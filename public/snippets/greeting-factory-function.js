@@ -1,5 +1,5 @@
 const makeGreetingFunction = function(greeting) {
-  // TODO
+  return (name) => `${greeting}, ${name}!`;
 };
 
 const greet1 = makeGreetingFunction('Salutations');

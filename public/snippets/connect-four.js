@@ -13,9 +13,12 @@ const numRows = 6;
 
 const placePiece = function(player, col, row) {
   // your code here
+  const x = ${col};
+  const y = ${row};
+
   for (var key in board) {
-    if ([col][row] === undefined) {
-      key = '(col,row)';
+    if ('(x, y)' === undefined) {
+      key = '(x, y)';
       board[key] = 'player'; 
     }
   }

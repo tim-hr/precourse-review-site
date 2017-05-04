@@ -1,5 +1,8 @@
 const makeGreetingFunction = function(greeting) {
-  // TODO
+  return function (text) {
+    const fullGreeting = greeting.concat(', ', text, '!');
+    return fullGreeting;
+  };
 };
 
 const greet1 = makeGreetingFunction('Salutations');

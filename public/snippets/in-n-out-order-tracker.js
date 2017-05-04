@@ -1,6 +1,13 @@
-class Order {
+I'm a bit confused on how to make this work
 
+class Order {
+  constructor() {
+    this.data = {};
+  }
 }
+
+const instance #1 = new Order();
+const instance #2 = new Order();
 
 // create order instance #1
 // create order instance #2

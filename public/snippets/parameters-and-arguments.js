@@ -1,5 +1,8 @@
 const greenify = function(el) {
-  el.setAttribute('style', 'background-color: green');
+  for (let i = 0; i < el.length; i++) {
+  el[i].setAttribute('style', 'background-color: green');
+  };
 };
 
-greenify();
+const head = document.querySelectorAll('thead tr th');
+greenify(head);

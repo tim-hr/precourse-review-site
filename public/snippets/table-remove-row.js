@@ -7,7 +7,6 @@ class ViewManager {
   }
 
   onClick(event) {
-    console.log('test');
     event.preventDefault();
     var bodyEl = document.querySelector('TBODY');
     bodyEl.removeChild(bodyEl.firstChild); // remove blank text node

@@ -1,18 +1,18 @@
 class Order {
   constructor() {
-  	this.progress = ['Taking Order', 'Cooking Order', 'Requesting pickup of order', 'Order complete'];
-  	this.status = this.progress[0];
+    this.progress = ['Taking Order', 'Cooking Order', 'Requesting pickup of order', 'Order complete'];
+    this.status = this.progress[0];
   }
 
   getStatus() {
-  	return this.status;
+    return this.status;
   }
 
 
   advanceStatus() {
     const state = this.getStatus();
     const currentIndexState = this.progress.indexOf(state);
-  	if(currentIndexState !== this.progress.length-1) {
+    if(currentIndexState !== this.progress.length-1) {
       this.status = this.progress[currentIndexState + 1];
     }
   }

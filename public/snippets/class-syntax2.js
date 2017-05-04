@@ -8,7 +8,7 @@ class Dog {
             return this.bark();
         }
     }
-    bark () {
-      return 'ruff!';
+    bark() {
+        return 'ruff!';
     }
 }

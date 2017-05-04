@@ -1,18 +1,13 @@
 const clock = {
-  getHours: null,
-  getMinutes: null,
-  getSeconds: null
+  getHours: function() {
+    return new Date().getHours();
+  },
 
-  getHours = function() {
+  getMinutes: function() {
+    return new Date().getMinutes();
+  },
 
+  getSeconds: function() {
+    return new Date().getSeconds();
   }
-
-  getMinutes = function() {
-
-  }
-
-  getSeconds = function() {
-
-  }
-
 };

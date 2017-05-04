@@ -8,6 +8,12 @@ const numRows = 6;
 
 const placePiece = function(player, col, row) {
   // your code here
+  let position = `(${col},${row})`;
+  for(let x in board){
+    if(x !== position){
+      board[position] = player;
+    }
+  }
 };
 
 placePiece('O', 2, 5);

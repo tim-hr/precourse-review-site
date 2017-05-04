@@ -14,11 +14,6 @@ const nestedObj = {
   }
 };
 
-// const nestedObj = {
-//     'quuuuux!': 'you got me'
-  
-// };
-
 const innerMostValue = function(obj) {
   const value =  obj[Object.keys(obj)];
   if (typeof value === "string")

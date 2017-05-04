@@ -1,12 +1,35 @@
 class Order {
+  constructor() {
+    this.state = 'taking order';
+    return this.state;
+  };
 
-}
+  cook() {
+    this.state = 'cooking order';
+    return this.state;
+  };
 
-// create order instance #1
-// create order instance #2
-// advance state of #1
-// advance state of #1
-// advance state of #2
-// advance state of #1
-// print state of #1 to console
-// print state of #2 to console
+  readyForPickup() {
+    this.state = 'Requesting pickup of order';
+    return this.state;
+  };
+
+  orderComplete() {
+    this.state = 'Order Complete';
+    return this.state;
+  };
+
+  checkState() {
+    return this.state;
+  };
+};
+
+const myOrder = new Order;
+const yourOrder = new Order;
+
+myOrder.cook();
+myOrder.readyForPickup();
+yourOrder.cook();
+myOrder.orderComplete();
+console.log(myOrder.checkState());
+console.log(yourOrder.checkState());

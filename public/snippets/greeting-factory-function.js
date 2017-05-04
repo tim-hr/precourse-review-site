@@ -1,5 +1,7 @@
 const makeGreetingFunction = function(greeting) {
-  // TODO
+  return function(name) {
+    console.log(`${greeting}, ${name}!`);
+  }
 };
 
 const greet1 = makeGreetingFunction('Salutations');
@@ -11,3 +13,14 @@ const greet2 = makeGreetingFunction('Hola');
 
 greet2('Hermione'); // "Hola, Hermione!"
 greet2('Voldemort'); // "Hola, Voldemort!"
+
+
+// const createEl = function(tagName) {
+//   return function(text) {
+//     const el = document.createElement(tagName);
+//     if (text) {
+//       el.textContent = text;
+//     }
+//     return el;
+//   };
+// };

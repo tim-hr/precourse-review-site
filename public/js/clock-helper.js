@@ -7,13 +7,15 @@ const padZero = (value) => {
 };
 
 setInterval(() => {
-  if (clock.getHours) {
+  console.log("hi");
+  if (clock.getHours()) {
     document.querySelector('.clock .hours').textContent = padZero(clock.getHours());
   }
-  if (clock.getMinutes) {
+  if (clock.getMinutes()) {
     document.querySelector('.clock .minutes').textContent = padZero(clock.getMinutes());
   }
-  if (clock.getSeconds) {
+  if (clock.getSeconds()) {
+    console.log(clock.getSeconds());
     document.querySelector('.clock .seconds').textContent = padZero(clock.getSeconds());
   }
 }, 1000);

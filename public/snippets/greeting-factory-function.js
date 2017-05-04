@@ -1,5 +1,8 @@
 const makeGreetingFunction = function(greeting) {
   // TODO
+  return function(name) {
+    return greeting + ', ' + name + '!'; 
+  }
 };
 
 const greet1 = makeGreetingFunction('Salutations');
@@ -11,3 +14,4 @@ const greet2 = makeGreetingFunction('Hola');
 
 greet2('Hermione'); // "Hola, Hermione!"
 greet2('Voldemort'); // "Hola, Voldemort!"
+

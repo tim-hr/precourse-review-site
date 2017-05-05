@@ -1,35 +1,39 @@
 class Order {
   constructor() {
-    this.data = {};
+    this.data = {
+      state: ['Taking order',
+              'Cooking order', 
+              'Requesting pickup', 
+              'Order complete'
+              ]
+    },
+    this.place = 0;
   }
 
-  createOrder(order){
-    return this.data[order];
+  advanceState() {
+    this.place++;
   }
 
-  cookingOrder(order, sequence){
-    this.data[order] = sequence;
+  trackState() {
+    return this.data['state'][this.place];
   }
-
-  requestPickUp(order, sequence){
-    return this.data[order] = sequence;
-  }
-
-  orderComplete(order){
-    delete this.data[order];
-  }
-
 }
-
-const ourOrder = new Order();
 
 
 
 // create order instance #1
+const order1 = new Order();
 // create order instance #2
+const order2 = new Order();
 // advance state of #1
+order1.advanceState();
 // advance state of #1
+order1.advanceState();
 // advance state of #2
+order2.advanceState();
 // advance state of #1
+order1.advanceState();
 // print state of #1 to console
+console.log(order1.trackState());
 // print state of #2 to console
+console.log(order2.trackState());

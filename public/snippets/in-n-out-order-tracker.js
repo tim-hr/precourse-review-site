@@ -6,24 +6,24 @@ const state = {
 };
 
 class Order {
-  constructor(state=1) {
-    this.state = {state};
+  constructor() {
+    this.stateKey = 1;
   }
 
   advanceState() {
-    this.state += 1;
+    this.stateKey += 1;
   }
 
   printState() {
-    console.log(this.state);
+    console.log(state[this.stateKey]);
   }
 }
 
 // create order instance #1
-order1 = Order();
+order1 = new Order();
 
 // create order instance #2
-order2 = Order();
+order2 = new Order();
 
 // advance state of #1
 order1.advanceState();

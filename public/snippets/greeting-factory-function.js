@@ -1,6 +1,6 @@
 const makeGreetingFunction = function(greeting) {
   return function(name){
-    return greeting + ', ' + name + '!'
+    return greeting + ', ' + name + '!';
   };
 };
 

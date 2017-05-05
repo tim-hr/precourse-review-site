@@ -7,9 +7,6 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  // "engines": {
-    // "node": "7.9.0"
-  // },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tim-hr/precourse-review-site.git"

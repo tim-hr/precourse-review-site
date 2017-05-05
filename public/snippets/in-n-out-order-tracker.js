@@ -1,6 +1,29 @@
-class Order {
 
+
+
+
+class OrderInAndOut {
+
+  orderInstance1() {
+
+  }
+
+  orderInstance2() {
+
+  }
+
+  advanceState1() {
+
+  }
+
+  advanceState2() {
+
+  }
 }
+
+const order = new OrderInAndOut(); 
+order.advanceState1();
+order.advanceState2(); 
 
 // create order instance #1
 // create order instance #2

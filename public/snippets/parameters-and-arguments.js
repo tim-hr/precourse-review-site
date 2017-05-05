@@ -1,5 +1,6 @@
 const greenify = function(el) {
-  el.setAttribute('style', 'background-color: green');
+  el.setAttribute('style', 'background-color: pink');
+
 };
 
-greenify();
+greenify(document.querySelectorAll("TR")[2]);

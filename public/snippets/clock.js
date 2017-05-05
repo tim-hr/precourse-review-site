@@ -1,7 +1,22 @@
+const getHours = function() {
+	const timeNow = new Date();
+	return timeNow.getHours();
+}
+
+const getMinutes = function() {
+	const timeNow = new Date();
+	return timeNow.getMinutes();
+}
+
+const getSeconds = function() {
+	const timeNow = new Date();
+	return timeNow.getSeconds();
+}
+
 const clock = {
-  getHours: null,
-  getMinutes: null,
-  getSeconds: null
+  getHours: getHours,
+  getMinutes: getMinutes,
+  getSeconds: getSeconds
 };
 
 

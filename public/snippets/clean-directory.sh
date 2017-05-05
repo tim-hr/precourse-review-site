@@ -1,11 +1,12 @@
 mkdir client/js
-mv app.js client/js
+mv client/app.js client/js
 mkdir client/js/test
-touch client/js/test/multiplier.test.js
+
+mv client/test_multiplier.js client/multiplier.test.js
+mv client/multiplier.test.js client/js/test
 
 rm client/bundle.js
 rm client/multiplier.js
-rm client/test_multiplier.js
 
 rm server/server.js
 rm server
@@ -15,8 +16,9 @@ mkdir public
 mkdir public/css
 mkdir public/js
 
-mv styles.css client public/css
-mv bundle.js client public/js
+mv client/index.html public
+mv client/styles.css public/css
+mv bundle.js public/js
 
 
 

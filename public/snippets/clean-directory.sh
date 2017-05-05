@@ -15,4 +15,8 @@ mkdir public
 mkdir public/css
 mkdir public/js
 
+mv styles.css client public/css
+mv bundle.js client public/js
+
+
 

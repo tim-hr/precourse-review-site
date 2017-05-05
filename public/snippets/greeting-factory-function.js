@@ -1,7 +1,7 @@
 const makeGreetingFunction = function(greeting) {
   return function(name) {
-  	var phrase = greeting + ', ' + name;
-  	return phrase;
+    var phrase = greeting + ', ' + name;
+    return phrase;
   }
 };
 

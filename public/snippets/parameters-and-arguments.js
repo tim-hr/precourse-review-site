@@ -2,4 +2,7 @@ const greenify = function(el) {
   el.setAttribute('style', 'background-color: green');
 };
 
-greenify();
+var thead = document.querySelector('thead');
+console.log(thead);
+
+greenify(thead);

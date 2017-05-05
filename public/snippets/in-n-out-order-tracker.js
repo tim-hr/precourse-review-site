@@ -1,6 +1,27 @@
 class Order {
+  constructor() {
+    this.data = {};
+  }
+
+  takeOrder() {
+
+  }
+
+  cookOrder() {
+
+  }
+
+  pickUpOrder() {
+
+  }
+
+  completeOrder() {
+
+  }
 
 }
+
+// I don't think I can do this yet
 
 // create order instance #1
 // create order instance #2

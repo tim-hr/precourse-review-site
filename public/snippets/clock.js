@@ -1,7 +1,1 @@
-const clock = {
-  getHours: null,
-  getMinutes: null,
-  getSeconds: null
-};
-
-
+const clock = new Date();

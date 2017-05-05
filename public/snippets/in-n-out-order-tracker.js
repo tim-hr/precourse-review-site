@@ -1,29 +1,41 @@
+// I don't think I know this. 
 
 
+class Order {
 
-
-class OrderInAndOut {
-
-  orderInstance1() {
-
+  constuctor () {
+    this.date = { state: ["Taking order", "Cooking order", "Requesting pickup of order", "Order complete" ]};
+    this.count = 0; 
   }
 
-  orderInstance2() {
-
+  state () {
+    return this.date['state'][this.count]; 
   }
 
-  advanceState1() {
-
+  advanceState() {
+    let i=1; 
+    while(i < this.data['state'].length) {
+      this.date.state[i]
+      i++ 
+    }
   }
 
-  advanceState2() {
-
-  }
 }
 
-const order = new OrderInAndOut(); 
-order.advanceState1();
-order.advanceState2(); 
+
+const order = new Order(); 
+
+
+const orerInstance1 = new Order();
+const orerInstance2 = new Order();
+
+orerInstance1.advanceState();
+orerInstance1.advanceState();
+orerInstance2.advanceState();
+orerInstance2.advanceState();
+
+console.log(orerInstance1.state());
+console.log(orerInstance2.state());
 
 // create order instance #1
 // create order instance #2

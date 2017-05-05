@@ -1,5 +1,6 @@
 const greenify = function(el) {
-  el.setAttribute('style', 'background-color: green');
+  let cell = document.getElementsByTagName(el);
+  cell.setAttribute('style', 'background-color: green');
 };
 
-greenify();
+greenify('th');

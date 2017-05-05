@@ -1,12 +1,28 @@
 class Order {
+  constructor() {
+    this.data = {
+      state: ["Taking order", "Cooking order", "Requesting pick up of order", "Order complete"]
+    },
+    this.currentState = 0;
+  };
 
+  trackState() {
+    return this.data['state'][this.currentState];
+  };
+
+  nextState() {
+    return this.currentState++;
+  };
 }
 
-// create order instance #1
-// create order instance #2
-// advance state of #1
-// advance state of #1
-// advance state of #2
-// advance state of #1
-// print state of #1 to console
-// print state of #2 to console
+const order1 = new Order();
+const order2 = new Order();
+
+order1.nextState();
+order1.nextState();
+order2.nextState();
+order1.nextState();
+
+console.log(order1.trackState());
+console.log(order2.trackState());
+

@@ -1,7 +1,7 @@
+let currTime = new Date();
+
 const clock = {
-  getHours: null,
-  getMinutes: null,
-  getSeconds: null
+  getHours: currTime.getHours(),
+  getMinutes: currTime.getMinutes(),
+  getSeconds: currTime.getSeconds()
 };
-
-

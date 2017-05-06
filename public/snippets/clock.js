@@ -1,7 +1,7 @@
 const clock = {
-  getHours: null,
-  getMinutes: null,
-  getSeconds: null
+  getHours: () => new Date().getHours(),
+  getMinutes: () => new Date().getMinutes(),
+  getSeconds: () => new Date().getSeconds()
 };
 
 

@@ -8,6 +8,7 @@ const padZero = (value) => {
 
 setInterval(() => {
   if (clock.getHours) {
+    console.log('inside setinterval getHours');
     document.querySelector('.clock .hours').textContent = padZero(clock.getHours());
   }
   if (clock.getMinutes) {

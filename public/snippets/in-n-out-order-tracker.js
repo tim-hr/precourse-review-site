@@ -1,7 +1,7 @@
 class Order {
   constructor() {
     this.states = ["Taking order", "Cooking order", "Requesting pickup of order", "Order complete"];
-    this.CurrentState = 0;
+    this.currentState = 0;
   }
   returnState(){
     return this.states[this.currentState];
@@ -29,5 +29,3 @@ order1.advanceState();
 console.log(order1.returnState());
 // print state of #2 to console
 console.log(order2.returnState());
-
-console.log("test");

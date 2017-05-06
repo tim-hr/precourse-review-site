@@ -1,7 +1,14 @@
 const clock = {
-  getHours: null,
-  getMinutes: null,
-  getSeconds: null
+  getDate() {
+    return new Date();
+  },
+  getHours() {
+    return this.getDate().getHours();
+  },
+  getMinutes() {
+    return this.getDate().getMinutes();
+  },
+  getSeconds() {
+    return this.getDate().getSeconds();
+  }
 };
-
-

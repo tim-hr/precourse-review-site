@@ -1,16 +1,11 @@
-/*const removeTableRow = function() {
-  headers = document.querySelector('TBODY TR');
-  for (let i = 0; i < headers.length; i++){
-    headers[i].textContent = ''
-  };
-};
-*/
 const firstBtn = document.getElementById('btn-nuke-first-row');
 
 firstBtn.addEventListener('click', function() {
-  rows = document.querySelector('TBODY TR');
-  for (let i = 0; i < rows.length; i++) {
-    rows[i].textContent = ''
+  rowHeader = document.querySelector('TBODY TR TH').textContent = '';
+  rowData = document.querySelectorAll('TBODY TR TD')
+
+  for (let i = 0; i < 3; i++){
+    rowData[i].textContent = ''
   };
 }, false);
 

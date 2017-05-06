@@ -17,3 +17,8 @@ setInterval(() => {
     document.querySelector('.clock .seconds').textContent = padZero(clock.getSeconds());
   }
 }, 1000);
+
+
+
+
+// h

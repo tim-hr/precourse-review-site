@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tim-hr/precourse-review-site.git"
+    "url": "git+https://github.com/junjunparkpark/precourse-review-site.git"
   },
-  "author": "manzoid <manzoid@gmail.com>",
+  "author": "Jun",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tim-hr/precourse-review-site/issues"

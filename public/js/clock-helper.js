@@ -6,7 +6,10 @@ const padZero = (value) => {
   return value;
 };
 
+
 setInterval(() => {
+  let clock = new Date();
+
   if (clock.getHours) {
     document.querySelector('.clock .hours').textContent = padZero(clock.getHours());
   }

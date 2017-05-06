@@ -1,7 +1,7 @@
+const date = new Date();
+
 const clock = {
-  getHours: null,
-  getMinutes: null,
-  getSeconds: null
+  getHours: date.getHours(),
+  getMinutes: date.getMinutes(),
+  getSeconds: date.getSeconds()
 };
-
-

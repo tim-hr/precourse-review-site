@@ -5,12 +5,12 @@ class Order {
       'Taking order' : 'Cooking order',
       'Cooking order' : 'Request pickup of order',
       'Request pickup of order' : 'Order complete',
-      'Order complete' : 'Order complete';
+      'Order complete' : 'Order complete'
     }
   }
 
   advanceState() {
-    this.state = nextState(this.state);
+    this.state = this.nextState[this.state];
   }
 
   getState() {

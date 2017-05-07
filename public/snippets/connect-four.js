@@ -7,8 +7,11 @@ const numCols = 7;
 const numRows = 6;
 
 const placePiece = function(player, col, row) {
-  // your code here
+  let trs = document.querySelectorAll('TBODY TR');
+  trs[row].cells[col].innerText = player;
 };
+
+renderBoard(); // note: this function has been provided for you
 
 placePiece('O', 2, 5);
 placePiece('X', 0, 4);
@@ -16,4 +19,4 @@ placePiece('O', 3, 5);
 placePiece('X', 0, 3);
 placePiece('O', 4, 5);
 
-renderBoard(); // note: this function has been provided for you
+

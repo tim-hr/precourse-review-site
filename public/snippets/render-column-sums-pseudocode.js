@@ -5,4 +5,5 @@ const renderColumnSums = function() {
   //   add up the filtered values in the list
   //   find the footer element for this column
   //   set its text content to the sum
-};
+}
+

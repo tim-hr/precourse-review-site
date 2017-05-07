@@ -1,11 +1,9 @@
-// const btn1 = document.querySelector("#btn-cycle-ponies");
-// console.log(btn1);
-//  btn1.addEventListener("click", function(){
-//    alert("clicked");
-// });
-// console.log("clicked");
 
 const btn1 = document.querySelector("#btn-cycle-ponies");
 btn1.addEventListener("click", function(){
-    alert("df");
+  const pic = document.querySelectorAll(".my-little-pony");
+  var temp = pic[0];
+  pic[0]=pic[1];
+  pic[1]=temp;
 });
+

@@ -1,5 +1,6 @@
 const makeGreetingFunction = function(greeting) {
-  // TODO
+  return function(who) {
+    return `${greeting} ${who}` }
 };
 
 const greet1 = makeGreetingFunction('Salutations');

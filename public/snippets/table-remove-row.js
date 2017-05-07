@@ -1,1 +1,2 @@
-// your code here
+document.getElementByClassName("data-table").deleteRow(0);
+

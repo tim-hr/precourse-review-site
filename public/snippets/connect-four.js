@@ -6,8 +6,13 @@ const board = {
 const numCols = 7;
 const numRows = 6;
 
+const isInRange = ((col, row) =>
+                   ((col >= 0) && (col < numCols) &&
+                    (row >= 0) && (row < numRows)));
 const placePiece = function(player, col, row) {
-  // your code here
+  if (isInRange(col, row)) {
+    board[`(${col},${row})`] = player;
+  }
 };
 
 placePiece('O', 2, 5);

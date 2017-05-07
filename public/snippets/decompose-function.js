@@ -1,11 +1,13 @@
 const renderColumnSums = function() {
-  // your pseudocode here
+  //forEach column up to number of columns
+  // setTextContent(sumColumnCells())
 };
 
-const TODO = function() {
-  // your pseudocode here
+const sumColumnCells = function() {
+  // get all cell values for a column and 
+  // add up cell values while filtering out non-numeric values
 };
 
-const TODO = function() {
-  // your pseudocode here
+const setTextContent = function() {
+  // find column footer el and set el.textContent to sum of column's cells
 };

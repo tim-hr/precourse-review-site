@@ -7,10 +7,15 @@ const numCols = 7;
 const numRows = 6;
 
 const placePiece = function(player, col, row) {
-  // your code here
+	board[`(${col},${row})`] = player;
 };
 
+
+
 placePiece('O', 2, 5);
+
+console.log("board" , board);
+
 placePiece('X', 0, 4);
 placePiece('O', 3, 5);
 placePiece('X', 0, 3);

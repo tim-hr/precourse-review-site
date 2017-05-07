@@ -1,11 +1,16 @@
 const renderColumnSums = function() {
-  // your pseudocode here
+  //use the getSum function and set that value to the targetted footer location
 };
 
-const TODO = function() {
-  // your pseudocode here
+const getColumnValues = function() {
+  //loop through the targeted column to create a list of values from column
 };
 
-const TODO = function() {
-  // your pseudocode here
+const filterNumbers = function() {
+  // filter through the array from getColumnValue with isNaN to find the number
+  // if number is in a form of string, change to number
 };
+
+const getSum = function() {
+  //add all the number in the array from filterNumber
+}

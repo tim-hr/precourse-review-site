@@ -5,3 +5,5 @@ const Person = function(name) {
 Person.prototype.displayName = function() {
   return this.name;
 };
+
+Person('jasper');

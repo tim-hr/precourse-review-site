@@ -1,13 +1,13 @@
 const board = {
   '(0,5)': 'X',
   '(1,5)': 'O',
-  '(1,4)': 'X'
+  '(1,4)': 'X',
 };
 const numCols = 7;
 const numRows = 6;
 
 const placePiece = function(player, col, row) {
-  // your code here
+  board['(' + col.toString() + ',' + row.toString() + ')'] = player;
 };
 
 placePiece('O', 2, 5);

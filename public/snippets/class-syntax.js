@@ -7,3 +7,5 @@ class Person {
     return this.name;
   }
 }
+
+var indie = new Person('Jasper');

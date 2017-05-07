@@ -8,6 +8,9 @@ const numRows = 6;
 
 const placePiece = function(player, col, row) {
   // your code here
+  var key = '(' + col + ',' + row + ')';
+  board[key] = player;
+  return board;
 };
 
 placePiece('O', 2, 5);

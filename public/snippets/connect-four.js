@@ -6,8 +6,17 @@ const board = {
 const numCols = 7;
 const numRows = 6;
 
+// // first solution
+// renderBoard();
+// const placePiece = function(player, col, row) {
+//   let table = document.querySelector('TBODY');
+//   let currentRow = table.getElementsByTagName('TR')[row];
+//   currentRow.getElementsByTagName('TD')[col].innerHTML = player;
+// };
+
+// second solution
 const placePiece = function(player, col, row) {
-  // your code here
+  board['('+col+','+row+')'] = player;
 };
 
 placePiece('O', 2, 5);

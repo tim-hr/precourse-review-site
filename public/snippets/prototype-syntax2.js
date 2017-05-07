@@ -11,3 +11,4 @@ Dog.prototype.listen = function(humanSpeech) {
 Dog.prototype.bark = function() {
   return 'ruff!';
 }
+

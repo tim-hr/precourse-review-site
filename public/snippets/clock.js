@@ -1,7 +1,15 @@
 const clock = {
-  getHours: null,
-  getMinutes: null,
-  getSeconds: null
+  getHours: function() {
+    const dateObj = new Date();
+    return dateObj.getHours();
+  },
+  getMinutes: function() {
+    const dateObj = new Date();
+    return dateObj.getMinutes();
+  },
+  getSeconds: function() {
+    const dateObj = new Date();
+    return dateObj.getSeconds();
+  }
 };
-
 

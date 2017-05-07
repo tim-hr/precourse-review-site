@@ -7,7 +7,9 @@ const numCols = 7;
 const numRows = 6;
 
 const placePiece = function(player, col, row) {
-  // your code here
+      if(col > numCols || row > numRows)
+        alert('please put the piece on the board which is '+numCols+' by '+numRows);
+    board['('+col+','+row+')'] = player;
 };
 
 placePiece('O', 2, 5);

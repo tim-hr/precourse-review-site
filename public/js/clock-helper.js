@@ -8,12 +8,12 @@ const padZero = (value) => {
 
 setInterval(() => {
   if (clock.getHours) {
-    document.querySelector('.clock .hours').textContent = padZero(clock.getHours());
+    document.querySelector('.clock .hours').textContent = padZero(new Date().getHours());
   }
   if (clock.getMinutes) {
-    document.querySelector('.clock .minutes').textContent = padZero(clock.getMinutes());
+    document.querySelector('.clock .minutes').textContent = padZero(new Date().getMinutes());
   }
   if (clock.getSeconds) {
-    document.querySelector('.clock .seconds').textContent = padZero(clock.getSeconds());
+    document.querySelector('.clock .seconds').textContent = padZero(new Date().getSeconds());
   }
 }, 1000);

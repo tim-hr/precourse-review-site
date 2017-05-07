@@ -16,7 +16,7 @@
 
     <h3>Manipulating tables</h3>
 
-    <table class="data-table">
+    <table class="data-table" id="data-table">
       <thead>
         <tr>
           <th></th>
@@ -53,28 +53,30 @@
       </tbody>
     </table>
 
-    <button id="btn-nuke-first-row">Nuke the first data row!</button>
+    <button id="btn-nuke-first-row" onclick = "deleteFirstRow()">Nuke the first data row!</button>
 
     <p>Make the button above actually work! Every time it's pressed, it should remove the top data row from the table.</p>
     <pre class="answer" data-src="snippets/table-remove-row.js"><code class="language-javascript"></code></pre>
     <script src="snippets/table-remove-row.js"></script>
 
     <h3>Manipulating images</h3>
+    <!-- <div id="my-little-pony-img"> -->
+      <div class="my-little-pony">
+        <div>Fluttershy</div>
+        <img src="http://i.imgur.com/6PwBk7gm.png" />
+      </div>
+      <div class="my-little-pony">
+        <div>Apple Jack</div>
+        <img src="http://i.imgur.com/obV6ULBm.png" />
+      </div>
+    <!-- </div> -->
 
-    <div class="my-little-pony">
-      <div>Fluttershy</div>
-      <img src="http://i.imgur.com/6PwBk7gm.png" />
-    </div>
-    <div class="my-little-pony">
-      <div>Apple Jack</div>
-      <img src="http://i.imgur.com/obV6ULBm.png" />
-    </div>
-
-    <button id="btn-cycle-ponies">Swap positions</button>
+    <button id="btn-cycle-ponies" onclick ="swapImg(document.getElementsByClassName('my-little-pony')[0], document.getElementsByClassName('my-little-pony')[1])">Swap positions</button>
 
     <p>Make the button above work! After pressing it once, Fluttershy should be on the bottom and Apple Jack on the top. Pressing it one more time should result in the original arrangement.</p>
     <p>Do this without destroying any elements, just re-use the ones that are there.</p>
     <pre class="answer" data-src="snippets/cycle-ponies.js"><code class="language-javascript"></code></pre>
+    <script src="snippets/cycle-ponies.js"></script>
 
     <hr>
     <a href="/">Back</a>

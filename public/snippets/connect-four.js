@@ -1,13 +1,17 @@
-const board = {
+let board = {
   '(0,5)': 'X',
   '(1,5)': 'O',
-  '(1,4)': 'X'
+  '(1,4)': 'X',
 };
 const numCols = 7;
 const numRows = 6;
 
-const placePiece = function(player, col, row) {
+const placePiece = function (player, col, row) {
   // your code here
+  let key = `(${col},${row})`;
+  if (board[key] === undefined) {
+    board[key] = player;
+  }
 };
 
 placePiece('O', 2, 5);

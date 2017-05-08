@@ -1,12 +1,32 @@
 class Order {
+  constructor() {
+      this.state = 'Taking order';
+  }
 
+  advance() {
+    switch (this.state) {
+        case 'Taking order':
+        this.state = 'Cooking order';
+        break;
+        case 'Cooking order':
+        this.state = 'Requesting pickup of order';
+        break;
+        case 'Requesting pickup of order':
+        this.state = 'Order complete';
+        break;
+    }
+  }
+
+  getStatus() {
+      return this.state;
+  }
 }
 
-// create order instance #1
-// create order instance #2
-// advance state of #1
-// advance state of #1
-// advance state of #2
-// advance state of #1
-// print state of #1 to console
-// print state of #2 to console
+let orderOne = new Order();
+let orderTwo = new Order();
+orderOne.advance();
+orderOne.advance();
+orderTwo.advance();
+orderOne.advance();
+console.log(orderOne.getStatus());
+console.log(orderTwo.getStatus());

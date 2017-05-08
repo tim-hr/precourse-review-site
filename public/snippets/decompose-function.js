@@ -1,11 +1,13 @@
 const renderColumnSums = function() {
-  // your pseudocode here
+  // iterates over all columns calling sumColumn
+  // for each
 };
 
-const TODO = function() {
-  // your pseudocode here
+const sumColumn = function() {
+  // Computes the sum for a given column
 };
 
-const TODO = function() {
-  // your pseudocode here
+const isNumber = function() {
+  // Checks whether the value of the cell 
+  // is a number or not
 };

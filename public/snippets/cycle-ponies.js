@@ -1,9 +1,14 @@
 
-const btn1 = document.querySelector("#btn-cycle-ponies");
-btn1.addEventListener("click", function(){
-  const pic = document.querySelectorAll(".my-little-pony");
-  var temp = pic[0];
-  pic[0]=pic[1];
-  pic[1]=temp;
-});
 
+const swapPropertyValues = function(el1, el2, propName) {
+  [el1[propName], el2[propName]] = [el2[propName], el1[propName]];
+};
+
+const btn1 = document.querySelector('#btn-cycle-ponies');
+btn1.addEventListener('click', function(){
+  const ponyLabelEls = document.querySelectorAll(".my-little-pony div");
+  const ponyImgEls = document.querySelectorAll(".my-little-pony img");
+
+  swapPropertyValues(ponyLabelEls[0], ponyLabelEls[1], 'textContent');
+  swapPropertyValues(ponyImgEls[0], ponyImgEls[1], 'src');
+});

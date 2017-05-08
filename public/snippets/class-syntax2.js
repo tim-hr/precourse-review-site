@@ -1,3 +1,9 @@
 class Dog {
-  // TODO
+  construtor(name) {
+    this.name = name;
+  }
+
+  displayDog() {
+    return this.name;
+  }
 }

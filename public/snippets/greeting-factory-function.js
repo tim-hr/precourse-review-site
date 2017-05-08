@@ -1,5 +1,11 @@
 const makeGreetingFunction = function(greeting) {
-  // TODO
+  return function(name) {
+    const phrase = document.createElement(greeting);
+    if(name) {
+      phrase.nameContent = name;
+    }
+    return phrase;
+  };
 };
 
 const greet1 = makeGreetingFunction('Salutations');

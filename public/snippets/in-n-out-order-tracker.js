@@ -1,12 +1,28 @@
 class Order {
 
+ constructor() {
+    this.state = {
+    stage: 0,
+    descriptions: ['Taking order', 'Cooking order', 'Requesting pickup of order', 'Order complete']
+    };
+  }
+
+  advanceState() {
+    if (this.state.stage < 3) {
+      this.state.stage++;
+    }
+  }
+
+  getState() {
+    return this.state.descriptions[this.state.stage];
+  }
 }
 
-// create order instance #1
-// create order instance #2
-// advance state of #1
-// advance state of #1
-// advance state of #2
-// advance state of #1
-// print state of #1 to console
-// print state of #2 to console
+const firstOrder = new Order;
+const secondOrder = new Order;
+firstOrder.advanceState();
+firstOrder.advanceState();
+secondOrder.advanceState();
+firstOrder.advanceState();
+console.log(firstOrder.getState());
+console.log(secondOrder.getState());

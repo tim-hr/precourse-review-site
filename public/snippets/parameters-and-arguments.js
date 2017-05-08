@@ -1,5 +1,6 @@
 const greenify = function(el) {
-  el.setAttribute('style', 'background-color: green');
+  el = document.querySelectorAll('thead tr');
+  el[0].setAttribute('style', 'background-color: green');
 };
 
 greenify();

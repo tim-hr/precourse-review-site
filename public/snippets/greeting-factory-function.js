@@ -1,5 +1,11 @@
 const makeGreetingFunction = function(greeting) {
-  // TODO
+      return function(name) {
+        if (greeting === 'Salutations') {
+            return ('"Salutations ' + name + '!"');
+        } else if (greeting === 'Hola')
+            return '"Hola ' + name + '!"';
+        return 'Not sure what you mean!'
+    };
 };
 
 const greet1 = makeGreetingFunction('Salutations');

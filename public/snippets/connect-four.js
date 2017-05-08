@@ -7,7 +7,9 @@ const numCols = 7;
 const numRows = 6;
 
 const placePiece = function(player, col, row) {
-  // your code here
+  let str = [col, row].join(',')
+  let key = ['(', str, ')'].join('');
+  board[key] = player;
 };
 
 placePiece('O', 2, 5);
@@ -15,5 +17,6 @@ placePiece('X', 0, 4);
 placePiece('O', 3, 5);
 placePiece('X', 0, 3);
 placePiece('O', 4, 5);
+console.log(board);
 
 renderBoard(); // note: this function has been provided for you

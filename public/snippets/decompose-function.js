@@ -1,17 +1,11 @@
 const renderColumnSums = function() {
-  //  for each column index up to number of columns
-  //    getCellNumbers()
-  //    appendValue()
-
+  // your pseudocode here
 };
 
-const getCellNumbers = function() {
-  // compile values from column
-  //  filter out non-numbers
-  //  sum filtered list
+const TODO = function() {
+  // your pseudocode here
 };
 
-const appendValue = function() {
-  // locate footer element
-  //  set its text to the sum
+const TODO = function() {
+  // your pseudocode here
 };

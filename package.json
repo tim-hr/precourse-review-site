@@ -1,6 +1,6 @@
 {
   "name": "precourse-review-site",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My review site",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tim-hr/precourse-review-site.git"
+    "url": "git+https://github.com/Pedro-Neiva/precourse-review-site.git"
   },
-  "author": "manzoid <manzoid@gmail.com>",
-  "license": "ISC",
+  "author": "Pedro Neiva Alves <pedro.neiva@gmail.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tim-hr/precourse-review-site/issues"
+    "url": "https://github.com/Pedro-Neiva/precourse-review-site/issues"
   },
-  "homepage": "https://github.com/tim-hr/precourse-review-site#readme",
+  "homepage": "https://github.com/Pedro-Neiva/precourse-review-site#readme",
   "dependencies": {
     "express": "^4.15.2"
   }

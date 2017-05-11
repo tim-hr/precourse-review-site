@@ -1,6 +1,16 @@
 const makeGreetingFunction = function(greeting) {
-  // TODO
+  return function(text) {
+    let message = greeting;
+    if (text) {
+      message = message + ', ' + text + '!';
+    }
+    return message;
+  };
 };
+
+const greet3 = makeGreetingFunction('Ola');
+greet3('Pedro'); // "Ola, Pedro!"
+greet3('Hackers'); //"Ola, Hackers!"
 
 const greet1 = makeGreetingFunction('Salutations');
 

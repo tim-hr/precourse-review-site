@@ -21,7 +21,7 @@ class SwapImages {
     event.preventDefault();
 
     let ponyImages = document.getElementsByClassName('my-little-pony');
-    this.swapElements(ponyImages[0], ponyImages[ponyImages.length - 1]).bind(this);
+    this.swapElements(ponyImages[0], ponyImages[ponyImages.length - 1]);
   }
 }
 
